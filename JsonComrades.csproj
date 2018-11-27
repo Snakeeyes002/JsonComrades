@@ -49,13 +49,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Comments.cs" />
     <Compile Include="Forms\FormComments.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\FormComments.Designer.cs">
       <DependentUpon>FormComments.cs</DependentUpon>
     </Compile>
-    <Compile Include="Post.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\FormComments.resx">
