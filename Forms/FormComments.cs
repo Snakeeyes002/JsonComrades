@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -18,9 +19,12 @@ namespace JsonComrades.Forms
             InitializeComponent();
         }
 
-        private void FormComments_Load(object sender, EventArgs e)
+        private async void FormComments_Load(object sender, EventArgs e)
         {
-        
+            WebClient client = new WebClient();
+            string result = await client.DownloadStringTaskAsync("https://jsonplaceholder.typicode.com/comments");
+            List<Comments> posts = JsonConvert.DeserializeObject<List<Comments>>(result);
+            dataGV_Comments.DataSource = posts;
         }
     }
 }
