@@ -28,7 +28,8 @@ namespace JsonComrades.Forms
         {
             WebClient client = new WebClient();
             string result = await client.DownloadStringTaskAsync("https://jsonplaceholder.typicode.com/posts");
-           
+            List<ToDo> toDos = JsonConvert.DeserializeObject<List<ToDo>>(result);
+            dgToDo.DataSource = toDos;
          
         }
     }
