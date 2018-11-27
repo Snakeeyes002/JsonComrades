@@ -55,6 +55,7 @@
     <Compile Include="Forms\FormComments.Designer.cs">
       <DependentUpon>FormComments.cs</DependentUpon>
     </Compile>
+    <Compile Include="Post.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\FormComments.resx">
