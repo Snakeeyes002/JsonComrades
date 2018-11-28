@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -32,7 +33,8 @@ namespace JsonComrades.Forms
         {
             WebClient client = new WebClient();
             string result = await client.DownloadStringTaskAsync("https://jsonplaceholder.typicode.com/posts");
-
+            List<Posts> posts = JsonConvert.DeserializeObject<List<Posts>>(result);
+            dataGridView1.DataSource = posts;
         }
     }
 }
