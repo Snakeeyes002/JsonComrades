@@ -60,6 +60,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\PostForm.resx">
       <DependentUpon>PostForm.cs</DependentUpon>
+       </EmbeddedResource>
     <Compile Include="Forms\ToDoForm.cs">
       <SubType>Form</SubType>
     </Compile>
