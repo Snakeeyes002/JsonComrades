@@ -49,6 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+
     <Compile Include="Album.cs" />
     <Compile Include="Forms\AlbumForm.cs">
       <SubType>Form</SubType>
@@ -56,13 +57,26 @@
     <Compile Include="Forms\AlbumForm.Designer.cs">
       <DependentUpon>AlbumForm.cs</DependentUpon>
     </Compile>
+     <EmbeddedResource Include="Forms\AlbumForm.resx">
+      <DependentUpon>FormComments.cs</DependentUpon>
+    </EmbeddedResource>
+    <Compile Include="Models\Comments.cs" />
+    <Compile Include="Forms\FormComments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormComments.Designer.cs">
+      <DependentUpon>FormComments.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Forms\FormComments.resx">
+      <DependentUpon>FormComments.cs</DependentUpon>
+    </EmbeddedResource>
     <Compile Include="Forms\PostForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\PostForm.Designer.cs">
       <DependentUpon>PostForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Posts.cs" />
+    <Compile Include="Models\Posts.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\AlbumForm.resx">
@@ -77,7 +91,7 @@
     <Compile Include="Forms\ToDoForm.Designer.cs">
       <DependentUpon>ToDoForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ToDo.cs" />
+    <Compile Include="Models\ToDo.cs" />
     <EmbeddedResource Include="Forms\ToDoForm.resx">
       <DependentUpon>ToDoForm.cs</DependentUpon>
     </EmbeddedResource>
