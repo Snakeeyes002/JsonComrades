@@ -56,10 +56,30 @@
     <Compile Include="Forms\FormComments.Designer.cs">
       <DependentUpon>FormComments.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\FormComments.resx">
       <DependentUpon>FormComments.cs</DependentUpon>
+    <Compile Include="Forms\PostForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PostForm.Designer.cs">
+      <DependentUpon>PostForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Posts.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forms\PostForm.resx">
+      <DependentUpon>PostForm.cs</DependentUpon>
+       </EmbeddedResource>
+    <Compile Include="Forms\ToDoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ToDoForm.Designer.cs">
+      <DependentUpon>ToDoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ToDo.cs" />
+    <EmbeddedResource Include="Forms\ToDoForm.resx">
+      <DependentUpon>ToDoForm.cs</DependentUpon>
+
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
