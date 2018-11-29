@@ -26,5 +26,10 @@ namespace JsonComrades.Forms
             List<Comments> posts = JsonConvert.DeserializeObject<List<Comments>>(result);
             dataGV_Comments.DataSource = posts;
         }
+
+        private void dataGV_Comments_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -49,7 +49,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Comments.cs" />
+    <Compile Include="Models\Comments.cs" />
     <Compile Include="Forms\FormComments.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,30 +58,28 @@
     </Compile>
     <EmbeddedResource Include="Forms\FormComments.resx">
       <DependentUpon>FormComments.cs</DependentUpon>
-</EmbeddedResource>
-
+    </EmbeddedResource>
     <Compile Include="Forms\PostForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\PostForm.Designer.cs">
       <DependentUpon>PostForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Posts.cs" />
+    <Compile Include="Models\Posts.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Forms\PostForm.resx">
       <DependentUpon>PostForm.cs</DependentUpon>
-       </EmbeddedResource>
+    </EmbeddedResource>
     <Compile Include="Forms\ToDoForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Forms\ToDoForm.Designer.cs">
       <DependentUpon>ToDoForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="ToDo.cs" />
+    <Compile Include="Models\ToDo.cs" />
     <EmbeddedResource Include="Forms\ToDoForm.resx">
       <DependentUpon>ToDoForm.cs</DependentUpon>
-
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

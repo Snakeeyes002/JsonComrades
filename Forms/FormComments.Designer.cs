@@ -37,16 +37,19 @@
             this.dataGV_Comments.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGV_Comments.Dock = System.Windows.Forms.DockStyle.Top;
             this.dataGV_Comments.Location = new System.Drawing.Point(0, 0);
+            this.dataGV_Comments.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.dataGV_Comments.Name = "dataGV_Comments";
-            this.dataGV_Comments.Size = new System.Drawing.Size(800, 425);
+            this.dataGV_Comments.Size = new System.Drawing.Size(1067, 523);
             this.dataGV_Comments.TabIndex = 0;
+            this.dataGV_Comments.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGV_Comments_CellContentClick);
             // 
             // FormComments
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
             this.Controls.Add(this.dataGV_Comments);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormComments";
             this.Text = "FormComments";
             this.Load += new System.EventHandler(this.FormComments_Load);
