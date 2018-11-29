@@ -10,16 +10,16 @@ namespace JsonComrades
     class ToDo
     {
             [JsonProperty("userId")]
-            public int userId { get; set; }
+            public int UserId { get; set; }
 
             [JsonProperty("id")]
-            public int id { get; set; }
+            public int Id { get; set; }
 
             [JsonProperty("title")]
-            public string title { get; set; }
+            public string Title { get; set; }
 
             [JsonProperty("completed")]
-            public bool completed { get; set; }
+            public bool Completed { get; set; }
        
     }
 }
