@@ -17,7 +17,7 @@ namespace JsonComrades
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new PostForm());
+            Application.Run(new AlbumForm());
         }
     }
 }

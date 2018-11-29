@@ -22,8 +22,13 @@ namespace JsonComrades.Forms
         {
             WebClient client = new WebClient();
             string result = await client.DownloadStringTaskAsync("https://jsonplaceholder.typicode.com/albums");
-            List<Album> posts = JsonConvert.DeserializeObject<List<Album>>(result);
-            dataGridView1.DataSource = posts;
+            List<Album> albums = JsonConvert.DeserializeObject<List<Album>>(result);
+            this.dataGridView1.DataSource = albums;
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
