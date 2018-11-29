@@ -49,6 +49,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Comments.cs" />
+    <Compile Include="Forms\FormComments.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormComments.Designer.cs">
+      <DependentUpon>FormComments.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Forms\FormComments.resx">
+      <DependentUpon>FormComments.cs</DependentUpon>
     <Compile Include="Forms\PostForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,6 +79,7 @@
     <Compile Include="ToDo.cs" />
     <EmbeddedResource Include="Forms\ToDoForm.resx">
       <DependentUpon>ToDoForm.cs</DependentUpon>
+
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
